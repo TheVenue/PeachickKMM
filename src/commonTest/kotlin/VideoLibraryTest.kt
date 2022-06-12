@@ -20,6 +20,8 @@ class VideoLibraryTest {
         VideoLibrary.addToMyStuff(video)
         assertEquals(1, VideoLibrary.myStuff.size)
         VideoLibrary.removeFromMyStuff(video)
+        VideoLibrary.removeFromMyStuff(video)
+        VideoLibrary.removeFromMyStuff(video)
         assertEquals(0, VideoLibrary.myStuff.size)
     }
 }
