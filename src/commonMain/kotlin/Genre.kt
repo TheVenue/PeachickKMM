@@ -1,3 +1,6 @@
 enum class Genre {
-    ACTION_AND_ADVENTURE
+    ACTION_AND_ADVENTURE,
+    COMEDY,
+    KIDS,
+    DRAMA
 }

@@ -1,5 +1,7 @@
 enum class Rating {
     R,
     E,
-    PG_13
+    PG,
+    PG_13,
+    TVMA
 }
