@@ -74,12 +74,4 @@ object VideoLibrary {
             )
         )
     }
-
-    fun addToMyStuff(mediaClass: MediaClass) {
-        myStuff.add(mediaClass)
-    }
-
-    fun removeFromMyStuff(mediaClass: MediaClass) {
-        myStuff.remove(mediaClass)
-    }
 }
