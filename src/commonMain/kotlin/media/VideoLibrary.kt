@@ -54,6 +54,30 @@ object VideoLibrary {
                 videoLength = VideoLength(1, 30)
             )
         )
+        movies.add(
+            Video(
+                id = "34fsdfa32",
+                title = "2 Fast 2 Furious",
+                genre = Genre.ACTION_AND_ADVENTURE,
+                rating = Rating.PG_13,
+                description = "A former policeman (Paul Walker) and his friend (Tyrese) work with a U.S. Customs agent (Eva Mendes) to indict a launderer in Miami.",
+                peachickExclusive = false,
+                releaseYear = 2003,
+                videoLength = VideoLength(hrs = 1, mins = 47)
+            )
+        )
+        movies.add(
+            Video(
+                id = "439f9sv9as",
+                title = "Antwone Fisher",
+                genre = Genre.DRAMA,
+                rating = Rating.PG_13,
+                description = "A Navy psychiatrist inspires a violence-prone sailor who was abused by foster parents to find his birth mother.",
+                peachickExclusive = false,
+                releaseYear = 2002,
+                videoLength = VideoLength(hrs = 2, mins = 0)
+            )
+        )
     }
 
     private fun addTvShows() {
@@ -77,5 +101,9 @@ object VideoLibrary {
                 id = "afsgdsfhstad", title = "Bel-Air", genre = Genre.DRAMA, seasons = mutableListOf(season)
             )
         )
+    }
+
+    fun getMoviesFromGenre(genre: Genre): List<Video> {
+        return movies.filter { it.genre == genre }
     }
 }

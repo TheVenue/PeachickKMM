@@ -5,7 +5,7 @@ import kotlin.test.BeforeTest
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class VideoLibraryTest {
+class ProfileTest {
     private lateinit var profile: Profile
 
     @BeforeTest
