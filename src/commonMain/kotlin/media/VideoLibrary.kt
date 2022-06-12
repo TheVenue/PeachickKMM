@@ -1,8 +1,9 @@
+package media
+
 object VideoLibrary {
     val featuredVideos = mutableListOf<Video>()
     val movies = mutableListOf<Video>()
     val tvShows = mutableListOf<TvShow>()
-    val myStuff = mutableSetOf<MediaClass>()
 
     init {
         addFeaturedVideos()

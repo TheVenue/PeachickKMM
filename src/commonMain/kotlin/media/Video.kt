@@ -1,3 +1,5 @@
+package media
+
 data class Video(
     val id: String,
     val title: String,

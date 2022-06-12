@@ -1,3 +1,5 @@
+package media
+
 enum class Rating {
     R,
     E,
