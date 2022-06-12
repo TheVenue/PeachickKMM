@@ -20,7 +20,7 @@ class ProfileTest {
     @Test
     fun addToMyStuffEnsureNoDuplicates() {
         assertEquals(0, profile.myStuff.size)
-        val video = VideoLibrary.featuredVideos[0]
+        val video = VideoLibrary.movies[0]
         profile.myStuff.add(video)
         profile.myStuff.add(video)
         profile.myStuff.add(video)
@@ -31,7 +31,7 @@ class ProfileTest {
     @Test
     fun removeFromMyStuff() {
         assertEquals(0, profile.myStuff.size)
-        val video = VideoLibrary.featuredVideos[0]
+        val video = VideoLibrary.movies[0]
         profile.myStuff.add(video)
         assertEquals(1, profile.myStuff.size)
         profile.myStuff.remove(video)

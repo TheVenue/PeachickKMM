@@ -7,6 +7,7 @@ data class Video(
     val description: String,
     val rating: Rating,
     val peachickExclusive: Boolean = false,
+    val isFeatured: Boolean = true,
     val releaseYear: Int,
     val videoLengthInMinutes: Int
 ) : MediaClass

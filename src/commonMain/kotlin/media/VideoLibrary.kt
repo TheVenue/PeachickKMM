@@ -4,29 +4,12 @@ import media.tvShow.Season
 import media.tvShow.TvShow
 
 object VideoLibrary {
-    val featuredVideos = mutableListOf<Video>()
     val movies = mutableListOf<Video>()
     val tvShows = mutableListOf<TvShow>()
 
     init {
-        addFeaturedVideos()
         addMovies()
         addTvShows()
-    }
-
-    private fun addFeaturedVideos() {
-        featuredVideos.add(
-            Video(
-                id = "iaidivcisis",
-                title = "The Northman",
-                genre = Genre.ACTION_AND_ADVENTURE,
-                rating = Rating.R,
-                description = "On the verge of becoming a man, Prince Amleth's life changes when his father is murdered and his mother is kidnapped; two decades later, the fierce viking seeks revenge.",
-                peachickExclusive = true,
-                releaseYear = 2022,
-                videoLengthInMinutes = 136
-            )
-        )
     }
 
     private fun addMovies() {
@@ -76,6 +59,19 @@ object VideoLibrary {
                 peachickExclusive = false,
                 releaseYear = 2002,
                 videoLengthInMinutes = 120
+            )
+        )
+        movies.add(
+            Video(
+                id = "iaidivcisis",
+                title = "The Northman",
+                genre = Genre.ACTION_AND_ADVENTURE,
+                rating = Rating.R,
+                description = "On the verge of becoming a man, Prince Amleth's life changes when his father is murdered and his mother is kidnapped; two decades later, the fierce viking seeks revenge.",
+                peachickExclusive = true,
+                isFeatured = true,
+                releaseYear = 2022,
+                videoLengthInMinutes = 136
             )
         )
     }

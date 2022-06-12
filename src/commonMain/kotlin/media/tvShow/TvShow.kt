@@ -7,5 +7,7 @@ data class TvShow(
     val id: String,
     val title: String,
     val genre: Genre,
-    val seasons: MutableList<Season>
+    val seasons: MutableList<Season>,
+    val isPeachickExclusive: Boolean = false,
+    val isFeatured: Boolean = false
 ) : MediaClass
