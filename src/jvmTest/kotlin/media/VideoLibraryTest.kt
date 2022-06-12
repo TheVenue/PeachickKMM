@@ -4,6 +4,7 @@ import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
 import kotlin.random.Random
 import kotlin.random.nextInt
+import kotlin.test.assertEquals
 
 internal class VideoLibraryTest {
 
@@ -14,7 +15,7 @@ internal class VideoLibraryTest {
         val genre = getGenre(randomGenreInt)
         val listOfVideos = VideoLibrary.getMoviesFromGenre(genre)
         listOfVideos.shuffled()
-        kotlin.test.assertEquals(genre, listOfVideos[0].genre)
+        assertEquals(genre, listOfVideos[0].genre)
     }
 
     private fun getGenre(randomGenreInt: Int): Genre {
