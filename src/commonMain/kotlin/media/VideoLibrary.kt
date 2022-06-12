@@ -24,7 +24,7 @@ object VideoLibrary {
                 description = "On the verge of becoming a man, Prince Amleth's life changes when his father is murdered and his mother is kidnapped; two decades later, the fierce viking seeks revenge.",
                 peachickExclusive = true,
                 releaseYear = 2022,
-                videoLength = VideoLength(2, 16)
+                videoLengthInMinutes = 136
             )
         )
     }
@@ -39,7 +39,7 @@ object VideoLibrary {
                 description = "Soon after their blind date goes disastrously wrong, two single parents and their children end up sharing a suite together at an African resort.",
                 peachickExclusive = false,
                 releaseYear = 2014,
-                videoLength = VideoLength(1, 57)
+                videoLengthInMinutes = 117
             )
         )
         movies.add(
@@ -51,7 +51,7 @@ object VideoLibrary {
                 description = "On a mission to find a new master to serve, three Minions meet Scarlet Overkill the world's first female supervillain.",
                 peachickExclusive = false,
                 releaseYear = 2015,
-                videoLength = VideoLength(1, 30)
+                videoLengthInMinutes = 90
             )
         )
         movies.add(
@@ -63,7 +63,7 @@ object VideoLibrary {
                 description = "A former policeman (Paul Walker) and his friend (Tyrese) work with a U.S. Customs agent (Eva Mendes) to indict a launderer in Miami.",
                 peachickExclusive = false,
                 releaseYear = 2003,
-                videoLength = VideoLength(hrs = 1, mins = 47)
+                videoLengthInMinutes = 107
             )
         )
         movies.add(
@@ -75,7 +75,7 @@ object VideoLibrary {
                 description = "A Navy psychiatrist inspires a violence-prone sailor who was abused by foster parents to find his birth mother.",
                 peachickExclusive = false,
                 releaseYear = 2002,
-                videoLength = VideoLength(hrs = 2, mins = 0)
+                videoLengthInMinutes = 120
             )
         )
     }
@@ -89,7 +89,7 @@ object VideoLibrary {
             description = "A talented West Philly teenager is sent to live in Bel Air to avoid the dangers of his hometown.",
             peachickExclusive = true,
             releaseYear = 2022,
-            videoLength = VideoLength(hrs = 0, 59)
+            videoLengthInMinutes = 59
         )
         val season = Season(
             id = 1,

@@ -8,5 +8,5 @@ data class Video(
     val rating: Rating,
     val peachickExclusive: Boolean = false,
     val releaseYear: Int,
-    val videoLength: VideoLength
+    val videoLengthInMinutes: Int
 ) : MediaClass
