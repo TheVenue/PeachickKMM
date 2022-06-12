@@ -2,7 +2,7 @@ object VideoLibrary {
     val featuredVideos = mutableListOf<Video>()
     val movies = mutableListOf<Video>()
     val tvShows = mutableListOf<TvShow>()
-    val myStuff = mutableListOf<MediaClass>()
+    val myStuff = mutableListOf<String>()
 
     init {
         addFeaturedVideos()
@@ -75,7 +75,7 @@ object VideoLibrary {
         )
     }
 
-    fun addToMyStuff(mediaClass: MediaClass) {
-        myStuff.add(mediaClass)
+    fun addToMyStuff(mediaId: String) {
+        myStuff.add(mediaId)
     }
 }
