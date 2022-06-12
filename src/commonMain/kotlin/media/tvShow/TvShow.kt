@@ -1,4 +1,7 @@
-package media
+package media.tvShow
+
+import media.Genre
+import media.MediaClass
 
 data class TvShow(
     val id: String,

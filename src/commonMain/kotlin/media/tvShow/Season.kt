@@ -1,4 +1,6 @@
-package media
+package media.tvShow
+
+import media.Video
 
 data class Season(
     val id: Int,

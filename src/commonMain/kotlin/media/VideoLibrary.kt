@@ -1,5 +1,8 @@
 package media
 
+import media.tvShow.Season
+import media.tvShow.TvShow
+
 object VideoLibrary {
     val featuredVideos = mutableListOf<Video>()
     val movies = mutableListOf<Video>()
