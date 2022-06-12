@@ -7,4 +7,4 @@ data class Video(
     val peachickExclusive: Boolean = false,
     val releaseYear: Int,
     val videoLength: VideoLength
-)
+) : MediaClass

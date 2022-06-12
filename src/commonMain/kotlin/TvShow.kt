@@ -3,4 +3,4 @@ data class TvShow(
     val title: String,
     val genre: Genre,
     val seasons: MutableList<Season>
-)
+) : MediaClass
