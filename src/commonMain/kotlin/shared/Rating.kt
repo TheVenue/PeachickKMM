@@ -1,4 +1,4 @@
-package media.shared
+package shared
 
 enum class Rating {
     R,

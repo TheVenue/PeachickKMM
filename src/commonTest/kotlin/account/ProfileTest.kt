@@ -1,6 +1,6 @@
 package account
 
-import media.VideoRepo
+import movies.MovieRepo
 import kotlin.test.AfterTest
 import kotlin.test.BeforeTest
 import kotlin.test.Test
@@ -21,7 +21,7 @@ class ProfileTest {
     @Test
     fun addToMyStuffEnsureNoDuplicates() {
         assertEquals(0, profile?.myStuff?.size)
-        val video = VideoRepo.getAllMovies()[0]
+        val video = MovieRepo.getAllMovies()[0]
         profile?.myStuff?.add(video)
         profile?.myStuff?.add(video)
         profile?.myStuff?.add(video)
@@ -32,7 +32,7 @@ class ProfileTest {
     @Test
     fun removeFromMyStuff() {
         assertEquals(0, profile?.myStuff?.size)
-        val video = VideoRepo.getAllMovies()[0]
+        val video = MovieRepo.getAllMovies()[0]
         profile?.myStuff?.add(video)
         assertEquals(1, profile?.myStuff?.size)
         profile?.myStuff?.remove(video)

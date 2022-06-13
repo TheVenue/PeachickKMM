@@ -1,4 +1,4 @@
-package media.shared
+package shared
 
 interface MediaClass {
 }

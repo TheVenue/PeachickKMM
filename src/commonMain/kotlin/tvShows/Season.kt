@@ -1,6 +1,6 @@
-package media.tvShow
+package tvShows
 
-import media.shared.Video
+import shared.Video
 
 data class Season(
     val id: String,

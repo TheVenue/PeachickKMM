@@ -1,7 +1,7 @@
-package media.tvShow
+package tvShows
 
-import media.shared.Genre
-import media.shared.MediaClass
+import shared.Genre
+import shared.MediaClass
 
 data class TvShow(
     val id: String,
