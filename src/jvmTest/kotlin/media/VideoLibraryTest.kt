@@ -12,7 +12,7 @@ internal class VideoLibraryTest {
     @Test
     @RepeatedTest(999)
     fun getGenreOfMovies() {
-        val randomGenreInt = Random.nextInt(0..Genre.values().size)
+        val randomGenreInt = Random.nextInt(0 until Genre.values().size)
         val genre = getGenre(randomGenreInt)
         val listOfVideos = VideoLibrary.getMoviesFromGenre(genre)
         listOfVideos.shuffled()
