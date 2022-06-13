@@ -1,7 +1,7 @@
 import shared.Genre
 import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
-import tvShow.TVShowRepo
+import tvShows.TVShowRepo
 import kotlin.random.Random
 import kotlin.random.nextInt
 import kotlin.test.BeforeTest
