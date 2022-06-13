@@ -102,4 +102,8 @@ object VideoLibrary {
     fun getMoviesFromGenre(genre: Genre): List<Video> {
         return movies.filter { it.genre == genre }
     }
+
+    fun getFeaturedMovies(): List<Video> {
+        return movies.filter { it.isFeatured }
+    }
 }
