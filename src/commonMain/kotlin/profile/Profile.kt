@@ -1,6 +1,6 @@
 package profile
 
-import media.MediaClass
+import media.shared.MediaClass
 
 data class Profile(
     var username: String,

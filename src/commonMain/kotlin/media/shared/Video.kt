@@ -1,4 +1,4 @@
-package media
+package media.shared
 
 data class Video(
     val id: String,

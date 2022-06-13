@@ -1,18 +1,15 @@
 package media
 
+import media.shared.Genre
+import media.shared.Rating
+import media.shared.Video
 import media.tvShow.Season
 import media.tvShow.TvShow
 
-object VideoLibrary {
-    val movies = mutableListOf<Video>()
-    val tvShows = mutableListOf<TvShow>()
+class VideoAPIService {
 
-    init {
-        addMovies()
-        addTvShows()
-    }
-
-    private fun addMovies() {
+    fun getMovies() : MutableList<Video> {
+        val movies = mutableListOf<Video>()
         movies.add(
             Video(
                 id = "fsbvsfvas",
@@ -74,9 +71,11 @@ object VideoLibrary {
                 videoLengthInMinutes = 136
             )
         )
+        return movies
     }
 
-    private fun addTvShows() {
+    fun getTvShows() : MutableList<TvShow> {
+        val tvShows = mutableListOf<TvShow>()
         val episodeOfBelAir = Video(
             id = "fhsgdassdt",
             title = "Dreams And Nightmares",
@@ -176,17 +175,6 @@ object VideoLibrary {
                 description = "Children, ages 9 to 14, race against each other on the ultimate obstacle course to win the title of American Ninja Warrior Junior."
             )
         )
-    }
-
-    fun getMoviesFromGenre(genre: Genre): List<Video> {
-        return movies.filter { it.genre == genre }
-    }
-
-    fun getFeaturedMovies(): List<Video> {
-        return movies.filter { it.isFeatured }
-    }
-
-    fun getTvShowsFromGenre(genre: Genre): List<TvShow> {
-        return tvShows.filter { it.genre == genre }
+        return tvShows
     }
 }

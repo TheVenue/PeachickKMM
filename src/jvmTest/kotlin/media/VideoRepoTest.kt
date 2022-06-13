@@ -1,5 +1,6 @@
 package media
 
+import media.shared.Genre
 import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
 import kotlin.random.Random
@@ -7,14 +8,14 @@ import kotlin.random.nextInt
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
-internal class VideoLibraryTest {
+internal class VideoRepoTest {
 
     @Test
     @RepeatedTest(999)
     fun getGenreOfMovies() {
         val randomGenreInt = Random.nextInt(0 until Genre.values().size)
         val genre = getGenre(randomGenreInt)
-        val listOfVideos = VideoLibrary.getMoviesFromGenre(genre)
+        val listOfVideos = VideoRepo.getMoviesFromGenre(genre)
         listOfVideos.shuffled()
         assertEquals(genre, listOfVideos[0].genre)
     }
@@ -22,7 +23,7 @@ internal class VideoLibraryTest {
     @Test
     @RepeatedTest(999)
     fun getFeaturedMovies() {
-        val listOfFeaturedMovies = VideoLibrary.getFeaturedMovies()
+        val listOfFeaturedMovies = VideoRepo.getFeaturedMovies()
         assertTrue(listOfFeaturedMovies[0].isFeatured)
     }
 
@@ -31,7 +32,7 @@ internal class VideoLibraryTest {
     fun getGenreOfTvShows() {
         val randomGenreInt = Random.nextInt(0 until Genre.values().size)
         val genre = getGenre(randomGenreInt)
-        val listOfTvShows = VideoLibrary.getTvShowsFromGenre(genre)
+        val listOfTvShows = VideoRepo.getTvShowsFromGenre(genre)
         listOfTvShows.shuffled()
         assertEquals(genre, listOfTvShows[0].genre)
     }

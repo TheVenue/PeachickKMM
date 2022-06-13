@@ -1,4 +1,4 @@
-package media
+package media.shared
 
 enum class Genre {
     ACTION_AND_ADVENTURE,
