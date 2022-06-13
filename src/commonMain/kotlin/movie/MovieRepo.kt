@@ -1,4 +1,4 @@
-package movies
+package movie
 
 import shared.Genre
 import shared.Video

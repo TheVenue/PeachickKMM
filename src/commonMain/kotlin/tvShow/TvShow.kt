@@ -1,4 +1,4 @@
-package tvShows
+package tvShow
 
 import shared.Genre
 import shared.MediaClass

@@ -1,6 +1,6 @@
 package account
 
-import movies.MovieRepo
+import movie.MovieRepo
 import kotlin.test.AfterTest
 import kotlin.test.BeforeTest
 import kotlin.test.Test

@@ -1,4 +1,4 @@
-import movies.MovieRepo
+import movie.MovieRepo
 import shared.Genre
 import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test

@@ -1,7 +1,6 @@
-package tvShows
+package tvShow
 
 import shared.Genre
-import shared.Video
 
 object TVShowRepo {
     private val tvShowAPIService = TVShowAPIService()

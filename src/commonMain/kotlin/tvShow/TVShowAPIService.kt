@@ -1,12 +1,10 @@
-package movies
+package tvShow
 
 import shared.Genre
 import shared.Rating
 import shared.Video
-import tvShows.Season
-import tvShows.TvShow
 
-class MovieAPIService {
+class TVShowAPIService {
 
     fun getMovies() : MutableList<Video> {
         val movies = mutableListOf<Video>()
