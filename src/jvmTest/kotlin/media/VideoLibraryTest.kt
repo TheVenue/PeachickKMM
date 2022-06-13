@@ -26,6 +26,16 @@ internal class VideoLibraryTest {
         assertTrue(listOfFeaturedMovies[0].isFeatured)
     }
 
+    @Test
+    @RepeatedTest(999)
+    fun getGenreOfTvShows() {
+        val randomGenreInt = Random.nextInt(0 until Genre.values().size)
+        val genre = getGenre(randomGenreInt)
+        val listOfTvShows = VideoLibrary.getTvShowsFromGenre(genre)
+        listOfTvShows.shuffled()
+        assertEquals(genre, listOfTvShows[0].genre)
+    }
+
     private fun getGenre(randomGenreInt: Int): Genre {
         return when (randomGenreInt) {
             0 -> Genre.ACTION_AND_ADVENTURE

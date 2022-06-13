@@ -4,6 +4,8 @@ enum class Rating {
     R,
     E,
     PG,
-    PG_13,
-    TVMA
+    PG13,
+    TVMA,
+    TV14,
+    TVG
 }
