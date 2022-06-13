@@ -1,6 +1,6 @@
 package account
 
-class AccountRepo {
+object AccountRepo {
     private val accountApiService = AccountApiService()
     private val profiles = mutableListOf<Profile>()
 
