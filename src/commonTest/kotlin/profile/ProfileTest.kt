@@ -1,12 +1,13 @@
 package profile
 
 import media.VideoLibrary
+import kotlin.test.AfterTest
 import kotlin.test.BeforeTest
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
 class ProfileTest {
-    private lateinit var profile: Profile
+    private var profile: Profile? = null
 
     @BeforeTest
     fun setup() {
@@ -19,24 +20,29 @@ class ProfileTest {
 
     @Test
     fun addToMyStuffEnsureNoDuplicates() {
-        assertEquals(0, profile.myStuff.size)
+        assertEquals(0, profile?.myStuff?.size)
         val video = VideoLibrary.movies[0]
-        profile.myStuff.add(video)
-        profile.myStuff.add(video)
-        profile.myStuff.add(video)
-        profile.myStuff.add(video)
-        assertEquals(1, profile.myStuff.size)
+        profile?.myStuff?.add(video)
+        profile?.myStuff?.add(video)
+        profile?.myStuff?.add(video)
+        profile?.myStuff?.add(video)
+        assertEquals(1, profile?.myStuff?.size)
     }
 
     @Test
     fun removeFromMyStuff() {
-        assertEquals(0, profile.myStuff.size)
+        assertEquals(0, profile?.myStuff?.size)
         val video = VideoLibrary.movies[0]
-        profile.myStuff.add(video)
-        assertEquals(1, profile.myStuff.size)
-        profile.myStuff.remove(video)
-        profile.myStuff.remove(video)
-        profile.myStuff.remove(video)
-        assertEquals(0, profile.myStuff.size)
+        profile?.myStuff?.add(video)
+        assertEquals(1, profile?.myStuff?.size)
+        profile?.myStuff?.remove(video)
+        profile?.myStuff?.remove(video)
+        profile?.myStuff?.remove(video)
+        assertEquals(0, profile?.myStuff?.size)
+    }
+
+    @AfterTest
+    fun tearDown() {
+        profile = null
     }
 }
