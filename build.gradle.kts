@@ -64,8 +64,4 @@ kotlin {
             }
         }
     }
-
-//    android {
-//        publishLibraryVariants("release", "debug")
-//    }
 }
