@@ -53,8 +53,7 @@ kotlin {
         val nativeTest by getting
     }
 
-    val publicationsFromMainHost = listOf(jvmTarget, jsTarget,
-        org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType.androidJvm, nativeTarget).map { it.name } + "kotlinMultiplatform"
+    val publicationsFromMainHost = listOf(org.jetbrains.kotlin.gradle.plugin.KotlinPlatformType.androidJvm).map { it.name } + "kotlinMultiplatform"
     publishing {
         publications {
             matching { it.name in publicationsFromMainHost }.all {
