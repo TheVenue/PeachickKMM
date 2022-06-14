@@ -11,7 +11,8 @@ repositories {
 }
 
 kotlin {
-    jvm {
+
+    val jvmTarget = jvm {
         compilations.all {
             kotlinOptions.jvmTarget = "16"
         }
@@ -20,7 +21,7 @@ kotlin {
             useJUnitPlatform()
         }
     }
-    js(BOTH) {
+    val jsTarget = js(BOTH) {
         browser {
             commonWebpackConfig {
                 cssSupport.enabled = true
@@ -51,4 +52,20 @@ kotlin {
         val nativeMain by getting
         val nativeTest by getting
     }
+
+    val publicationsFromMainHost = listOf(jvmTarget, jsTarget).map { it.name } + "peachick"
+    publishing {
+        publications {
+            matching { it.name in publicationsFromMainHost }.all {
+                val targetPublication = this@all
+                tasks.withType<AbstractPublishToMaven>()
+                    .matching { it.publication == targetPublication }
+                    .configureEach { onlyIf { findProperty("isMainHost") == "true" } }
+            }
+        }
+    }
+
+//    android {
+//        publishLibraryVariants("release", "debug")
+//    }
 }
