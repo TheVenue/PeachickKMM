@@ -53,7 +53,7 @@ kotlin {
         val nativeTest by getting
     }
 
-    val publicationsFromMainHost = listOf(jvm()).map { it.name } + "kotlinMultiplatform"
+    val publicationsFromMainHost = listOf(androidNativeX86()).map { it.name } + "kotlinMultiplatform"
     publishing {
         publications {
             matching { it.name in publicationsFromMainHost }.all {
