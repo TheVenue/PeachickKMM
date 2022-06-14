@@ -53,7 +53,7 @@ kotlin {
         val nativeTest by getting
     }
 
-    val publicationsFromMainHost = listOf(jvmTarget, jsTarget).map { it.name } + "peachick"
+    val publicationsFromMainHost = listOf(jvmTarget, jsTarget).map { it.name } + "kotlinMultiplatform"
     publishing {
         publications {
             matching { it.name in publicationsFromMainHost }.all {
