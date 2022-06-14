@@ -53,6 +53,7 @@ kotlin {
         val nativeTest by getting
     }
 
+    //androidNativeX86() works and publishes js/native/jvm versions
     val publicationsFromMainHost = listOf(androidNativeX86()).map { it.name } + "kotlinMultiplatform"
     publishing {
         publications {
