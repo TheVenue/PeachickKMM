@@ -2,6 +2,7 @@ import shared.Genre
 import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
 import tvShows.TVShowRepo
+import tvShows.TVShowRepo.getAllTVShows
 import kotlin.random.Random
 import kotlin.random.nextInt
 import kotlin.test.BeforeTest
@@ -11,7 +12,7 @@ internal class TVShowTest {
 
     @BeforeTest
     fun setup() {
-        TVShowRepo.getTVShows()
+        getAllTVShows()
     }
 
     @Test
