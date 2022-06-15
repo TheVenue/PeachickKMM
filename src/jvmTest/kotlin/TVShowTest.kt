@@ -30,8 +30,8 @@ class TVShowTest {
 
     @Test
     @RepeatedTest(999)
-    fun getPeachickExclusiveTvShows() {
-        val listOfPeachickExclusiveTvShows = TVShowRepo.getExclusiveTvShows()
-        assertTrue(listOfPeachickExclusiveTvShows.shuffled()[0].isExclusive)
+    fun getExclusiveTvShows() {
+        val listOfExclusiveTvShows = TVShowRepo.getExclusiveTvShows()
+        assertTrue(listOfExclusiveTvShows.shuffled()[0].isExclusive)
     }
 }

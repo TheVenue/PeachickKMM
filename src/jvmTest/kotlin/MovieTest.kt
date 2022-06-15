@@ -29,8 +29,8 @@ class MovieTest {
 
     @Test
     @RepeatedTest(999)
-    fun getPeachickExclusiveMovies() {
-        val listOfPeachickExclusiveMovies = MovieRepo.getExclusiveMovies()
-        assertTrue(listOfPeachickExclusiveMovies.shuffled()[0].isExclusive)
+    fun getExclusiveMovies() {
+        val listOfExclusiveMovies = MovieRepo.getExclusiveMovies()
+        assertTrue(listOfExclusiveMovies.shuffled()[0].isExclusive)
     }
 }
