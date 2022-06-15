@@ -2,7 +2,7 @@ package shared
 
 data class Video(
     val rating: Rating,
-    val releaseYear: Int,
+    val releaseDateInMs: Long,
     val videoLengthInMinutes: Int,
     override val id: String,
     override val title: String,
