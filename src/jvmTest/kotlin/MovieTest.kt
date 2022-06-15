@@ -29,6 +29,7 @@ internal class MovieTest {
     @RepeatedTest(999)
     fun getFeaturedMovies() {
         val listOfFeaturedMovies = MovieRepo.getFeaturedMovies()
+        listOfFeaturedMovies.shuffled()
         assertTrue(listOfFeaturedMovies[0].isFeatured)
     }
 }
