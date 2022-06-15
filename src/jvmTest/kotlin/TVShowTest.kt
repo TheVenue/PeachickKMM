@@ -8,11 +8,6 @@ import kotlin.test.assertTrue
 
 class TVShowTest {
 
-    @BeforeTest
-    fun setup() {
-        getAllTVShows()
-    }
-
     @Test
     @RepeatedTest(999)
     fun getGenreOfTvShows() {

@@ -22,14 +22,14 @@ object TVShowRepo {
     }
 
     fun getTvShowsFromGenre(genre: Genre): List<TvShow> {
-        return cachedTvShows.filter { it.genre == genre }
+        return getAllTVShows().filter { it.genre == genre }
     }
 
     fun getFeaturedTvShows(): List<TvShow> {
-        return cachedTvShows.filter { it.isFeatured }
+        return getAllTVShows().filter { it.isFeatured }
     }
 
     fun getExclusiveTvShows(): List<TvShow> {
-        return cachedTvShows.filter { it.isExclusive }
+        return getAllTVShows().filter { it.isExclusive }
     }
 }

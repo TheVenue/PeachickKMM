@@ -7,11 +7,6 @@ import kotlin.test.assertTrue
 
 class MovieTest {
 
-    @BeforeTest
-    fun setup() {
-        MovieRepo.getAllMovies()
-    }
-
     @Test
     @RepeatedTest(999)
     fun getGenreOfMovies() {

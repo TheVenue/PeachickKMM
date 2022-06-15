@@ -15,14 +15,14 @@ object MovieRepo {
     }
 
     fun getMoviesFromGenre(genre: Genre): List<Video> {
-        return cachedMovies.filter { it.genre == genre }
+        return getAllMovies().filter { it.genre == genre }
     }
 
     fun getFeaturedMovies(): List<Video> {
-        return cachedMovies.filter { it.isFeatured }
+        return getAllMovies().filter { it.isFeatured }
     }
 
     fun getExclusiveMovies(): List<Video> {
-        return cachedMovies.filter { it.isExclusive }
+        return getAllMovies().filter { it.isExclusive }
     }
 }
