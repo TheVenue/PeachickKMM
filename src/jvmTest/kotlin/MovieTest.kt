@@ -18,8 +18,7 @@ internal class MovieTest {
     @Test
     @RepeatedTest(999)
     fun getGenreOfMovies() {
-        val randomGenreInt = Random.nextInt(0 until Genre.values().size)
-        val genre = getGenre(randomGenreInt)
+        val genre = getRandomGenre()
         val listOfVideos = MovieRepo.getMoviesFromGenre(genre)
         assertEquals(genre, listOfVideos.shuffled()[0].genre)
     }

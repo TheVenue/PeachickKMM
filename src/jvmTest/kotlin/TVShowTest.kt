@@ -19,8 +19,7 @@ internal class TVShowTest {
     @Test
     @RepeatedTest(999)
     fun getGenreOfTvShows() {
-        val randomGenreInt = Random.nextInt(0 until Genre.values().size)
-        val genre = getGenre(randomGenreInt)
+        val genre = getRandomGenre()
         val listOfTvShows = TVShowRepo.getTvShowsFromGenre(genre)
         assertEquals(genre, listOfTvShows.shuffled()[0].genre)
     }
