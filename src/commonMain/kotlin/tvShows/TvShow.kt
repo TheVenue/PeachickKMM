@@ -4,11 +4,11 @@ import shared.Genre
 import shared.MediaClass
 
 data class TvShow(
+    val seasons: MutableList<Season>,
     val id: String,
     val title: String,
     val genre: Genre,
-    val seasons: MutableList<Season>,
-    val isPeachickExclusive: Boolean = false,
-    val isFeatured: Boolean = false,
-    val description: String
+    val description: String,
+    override val isFeatured: Boolean = false,
+    override val isExclusive: Boolean = false
 ) : MediaClass

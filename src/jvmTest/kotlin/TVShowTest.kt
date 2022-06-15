@@ -1,15 +1,12 @@
-import shared.Genre
 import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
 import tvShows.TVShowRepo
 import tvShows.TVShowRepo.getAllTVShows
-import kotlin.random.Random
-import kotlin.random.nextInt
 import kotlin.test.BeforeTest
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
-internal class TVShowTest {
+class TVShowTest {
 
     @BeforeTest
     fun setup() {
@@ -34,7 +31,7 @@ internal class TVShowTest {
     @Test
     @RepeatedTest(999)
     fun getPeachickExclusiveTvShows() {
-        val listOfPeachickExclusiveTvShows = TVShowRepo.getPeachickExclusiveTvShows()
-        assertTrue(listOfPeachickExclusiveTvShows.shuffled()[0].isPeachickExclusive)
+        val listOfPeachickExclusiveTvShows = TVShowRepo.getExclusiveTvShows()
+        assertTrue(listOfPeachickExclusiveTvShows.shuffled()[0].isExclusive)
     }
 }

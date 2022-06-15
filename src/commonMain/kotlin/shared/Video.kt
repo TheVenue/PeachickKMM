@@ -6,8 +6,8 @@ data class Video(
     val genre: Genre,
     val description: String,
     val rating: Rating,
-    val isPeachickExclusive: Boolean = false,
-    val isFeatured: Boolean = true,
     val releaseYear: Int,
-    val videoLengthInMinutes: Int
+    val videoLengthInMinutes: Int,
+    override val isExclusive: Boolean = false,
+    override val isFeatured: Boolean = false
 ) : MediaClass

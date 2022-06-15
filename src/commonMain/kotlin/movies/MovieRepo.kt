@@ -22,7 +22,7 @@ object MovieRepo {
         return cachedMovies.filter { it.isFeatured }
     }
 
-    fun getPeachickExclusiveMovies(): List<Video> {
-        return cachedMovies.filter { it.isPeachickExclusive }
+    fun getExclusiveMovies(): List<Video> {
+        return cachedMovies.filter { it.isExclusive }
     }
 }

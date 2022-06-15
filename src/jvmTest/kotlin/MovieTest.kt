@@ -5,7 +5,7 @@ import kotlin.test.BeforeTest
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
-internal class MovieTest {
+class MovieTest {
 
     @BeforeTest
     fun setup() {
@@ -30,7 +30,7 @@ internal class MovieTest {
     @Test
     @RepeatedTest(999)
     fun getPeachickExclusiveMovies() {
-        val listOfPeachickExclusiveMovies = MovieRepo.getPeachickExclusiveMovies()
-        assertTrue(listOfPeachickExclusiveMovies.shuffled()[0].isPeachickExclusive)
+        val listOfPeachickExclusiveMovies = MovieRepo.getExclusiveMovies()
+        assertTrue(listOfPeachickExclusiveMovies.shuffled()[0].isExclusive)
     }
 }
