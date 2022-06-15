@@ -7,6 +7,7 @@ import kotlin.random.Random
 import kotlin.random.nextInt
 import kotlin.test.BeforeTest
 import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
 internal class TVShowTest {
 
@@ -23,5 +24,13 @@ internal class TVShowTest {
         val listOfTvShows = TVShowRepo.getTvShowsFromGenre(genre)
         listOfTvShows.shuffled()
         assertEquals(genre, listOfTvShows[0].genre)
+    }
+
+    @Test
+    @RepeatedTest(999)
+    fun getFeaturedTvShows() {
+        val listOfFeaturedTvShows = TVShowRepo.getFeaturedTvShows()
+        listOfFeaturedTvShows.shuffled()
+        assertTrue(listOfFeaturedTvShows[0].isFeatured)
     }
 }

@@ -14,7 +14,7 @@ object TVShowRepo {
         return cachedTvShows
     }
 
-    fun getAllTVShows(): MutableList<TvShow> {
+    fun getAllTVShows(): List<TvShow> {
         if (cachedTvShows.isEmpty()) {
             cachedTvShows.addAll(tvShowAPIService.getTvShows())
         }
@@ -23,5 +23,9 @@ object TVShowRepo {
 
     fun getTvShowsFromGenre(genre: Genre): List<TvShow> {
         return cachedTvShows.filter { it.genre == genre }
+    }
+
+    fun getFeaturedTvShows(): List<TvShow> {
+        return cachedTvShows.filter { it.isFeatured }
     }
 }

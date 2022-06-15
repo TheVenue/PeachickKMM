@@ -104,7 +104,8 @@ class TVShowAPIService {
                 title = "American Ninja Warrior Junior",
                 genre = Genre.KIDS,
                 seasons = mutableListOf(seasonOfAmericanNinjaWarriorJunior),
-                description = "Children, ages 9 to 14, race against each other on the ultimate obstacle course to win the title of American Ninja Warrior Junior."
+                description = "Children, ages 9 to 14, race against each other on the ultimate obstacle course to win the title of American Ninja Warrior Junior.",
+                isFeatured = true
             )
         )
         return tvShows
