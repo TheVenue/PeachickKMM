@@ -30,4 +30,11 @@ internal class TVShowTest {
         val listOfFeaturedTvShows = TVShowRepo.getFeaturedTvShows()
         assertTrue(listOfFeaturedTvShows.shuffled()[0].isFeatured)
     }
+
+    @Test
+    @RepeatedTest(999)
+    fun getPeachickExclusiveTvShows() {
+        val listOfPeachickExclusiveTvShows = TVShowRepo.getPeachickExclusiveTvShows()
+        assertTrue(listOfPeachickExclusiveTvShows.shuffled()[0].isPeachickExclusive)
+    }
 }

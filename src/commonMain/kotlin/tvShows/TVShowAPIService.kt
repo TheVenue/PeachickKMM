@@ -28,6 +28,7 @@ class TVShowAPIService {
                 id = "afsgdsfhstad",
                 title = "Bel-Air",
                 genre = Genre.DRAMA,
+                isPeachickExclusive = true,
                 seasons = mutableListOf(seasonOfBelAir),
                 description = "The journey of a talented teen whose life is forever transformed when he moves from the streets of West Philadelphia to live with his relatives in one of LA's wealthiest enclaves."
             )

@@ -28,4 +28,8 @@ object TVShowRepo {
     fun getFeaturedTvShows(): List<TvShow> {
         return cachedTvShows.filter { it.isFeatured }
     }
+
+    fun getPeachickExclusiveTvShows(): List<TvShow> {
+        return cachedTvShows.filter { it.isPeachickExclusive }
+    }
 }
