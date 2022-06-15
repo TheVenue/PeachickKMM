@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test
 import shared.CombinedRepo
 import tvShows.TVShowRepo
 import kotlin.test.BeforeTest
+import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 class CombinedRepoTest {
@@ -26,5 +27,13 @@ class CombinedRepoTest {
     fun getAllExclusiveContent() {
         val listOfExclusiveContent = CombinedRepo.getAllExclusiveContent()
         assertTrue(listOfExclusiveContent.shuffled()[0].isExclusive)
+    }
+
+    @Test
+    @RepeatedTest(999)
+    fun getAllContentFromAGenre() {
+        val genre = getRandomGenre()
+        val listOfContentFromAGenre = CombinedRepo.getAllContentFromAGenre(genre)
+        assertEquals(genre, listOfContentFromAGenre.shuffled()[0].genre)
     }
 }
