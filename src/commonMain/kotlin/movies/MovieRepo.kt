@@ -23,6 +23,6 @@ object MovieRepo {
     }
 
     fun getPeachickExclusiveMovies(): List<Video> {
-        return cachedMovies.filter { it.peachickExclusive }
+        return cachedMovies.filter { it.isPeachickExclusive }
     }
 }

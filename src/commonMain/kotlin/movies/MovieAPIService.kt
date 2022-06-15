@@ -3,8 +3,6 @@ package movies
 import shared.Genre
 import shared.Rating
 import shared.Video
-import tvShows.Season
-import tvShows.TvShow
 
 class MovieAPIService {
 
@@ -17,7 +15,7 @@ class MovieAPIService {
                 genre = Genre.COMEDY,
                 rating = Rating.PG13,
                 description = "Soon after their blind date goes disastrously wrong, two single parents and their children end up sharing a suite together at an African resort.",
-                peachickExclusive = false,
+                isPeachickExclusive = false,
                 releaseYear = 2014,
                 videoLengthInMinutes = 117
             )
@@ -29,7 +27,7 @@ class MovieAPIService {
                 genre = Genre.KIDS,
                 rating = Rating.PG,
                 description = "On a mission to find a new master to serve, three Minions meet Scarlet Overkill the world's first female supervillain.",
-                peachickExclusive = false,
+                isPeachickExclusive = false,
                 releaseYear = 2015,
                 videoLengthInMinutes = 90
             )
@@ -41,7 +39,7 @@ class MovieAPIService {
                 genre = Genre.ACTION_AND_ADVENTURE,
                 rating = Rating.PG13,
                 description = "A former policeman (Paul Walker) and his friend (Tyrese) work with a U.S. Customs agent (Eva Mendes) to indict a launderer in Miami.",
-                peachickExclusive = false,
+                isPeachickExclusive = false,
                 releaseYear = 2003,
                 videoLengthInMinutes = 107
             )
@@ -53,7 +51,7 @@ class MovieAPIService {
                 genre = Genre.DRAMA,
                 rating = Rating.PG13,
                 description = "A Navy psychiatrist inspires a violence-prone sailor who was abused by foster parents to find his birth mother.",
-                peachickExclusive = false,
+                isPeachickExclusive = false,
                 releaseYear = 2002,
                 videoLengthInMinutes = 120
             )
@@ -65,7 +63,7 @@ class MovieAPIService {
                 genre = Genre.ACTION_AND_ADVENTURE,
                 rating = Rating.R,
                 description = "On the verge of becoming a man, Prince Amleth's life changes when his father is murdered and his mother is kidnapped; two decades later, the fierce viking seeks revenge.",
-                peachickExclusive = true,
+                isPeachickExclusive = true,
                 isFeatured = true,
                 releaseYear = 2022,
                 videoLengthInMinutes = 136

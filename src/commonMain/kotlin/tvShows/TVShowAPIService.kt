@@ -14,7 +14,7 @@ class TVShowAPIService {
             genre = Genre.DRAMA,
             rating = Rating.TVMA,
             description = "A talented West Philly teenager is sent to live in Bel Air to avoid the dangers of his hometown.",
-            peachickExclusive = true,
+            isPeachickExclusive = true,
             releaseYear = 2022,
             videoLengthInMinutes = 59
         )
@@ -40,7 +40,7 @@ class TVShowAPIService {
             genre = Genre.COMEDY,
             rating = Rating.TV14,
             description = "A documentary crew films Dunder Mifflin's reactions to downsizing rumors; a feud is born between Jim and Dwight.",
-            peachickExclusive = false,
+            isPeachickExclusive = false,
             releaseYear = 2005,
             videoLengthInMinutes = 38
         )
@@ -65,7 +65,7 @@ class TVShowAPIService {
             genre = Genre.ACTION_AND_ADVENTURE,
             rating = Rating.TV14,
             description = "Firehouse 51 deals with the aftermath of the capsized boat rescue.",
-            peachickExclusive = false,
+            isPeachickExclusive = false,
             releaseYear = 2012,
             videoLengthInMinutes = 42
         )
@@ -90,7 +90,7 @@ class TVShowAPIService {
             genre = Genre.KIDS,
             rating = Rating.TVG,
             description = "Twelve young athletes between the ages of 9 to 14 compete in the first of 16 qualifiers.",
-            peachickExclusive = true,
+            isPeachickExclusive = true,
             releaseYear = 2018,
             videoLengthInMinutes = 46
         )

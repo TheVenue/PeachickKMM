@@ -1,9 +1,6 @@
 import movies.MovieRepo
-import shared.Genre
 import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
-import kotlin.random.Random
-import kotlin.random.nextInt
 import kotlin.test.BeforeTest
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
@@ -34,6 +31,6 @@ internal class MovieTest {
     @RepeatedTest(999)
     fun getPeachickExclusiveMovies() {
         val listOfPeachickExclusiveMovies = MovieRepo.getPeachickExclusiveMovies()
-        assertTrue(listOfPeachickExclusiveMovies.shuffled()[0].peachickExclusive)
+        assertTrue(listOfPeachickExclusiveMovies.shuffled()[0].isPeachickExclusive)
     }
 }
