@@ -4,6 +4,7 @@ data class Video(
     val rating: Rating,
     val releaseDateInMs: Long,
     val videoLengthInMinutes: Int,
+    val viewsInPastWeek: Int,
     override val id: String,
     override val title: String,
     override val genre: Genre,

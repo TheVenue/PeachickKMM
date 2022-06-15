@@ -28,4 +28,10 @@ class MovieTest {
         val listOfExclusiveMovies = MovieRepo.getExclusiveMovies()
         assertTrue(listOfExclusiveMovies.shuffled()[0].isExclusive)
     }
+
+    @Test
+    fun getTrendingMovies() {
+        val listOfTrendingMovies = MovieRepo.getTrendingMovies()
+        assertTrue(listOfTrendingMovies[0].viewsInPastWeek >= listOfTrendingMovies.last().viewsInPastWeek)
+    }
 }

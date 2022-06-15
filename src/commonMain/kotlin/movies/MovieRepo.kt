@@ -1,5 +1,6 @@
 package movies
 
+import shared.AMOUNT_OF_TREDNING_ITEMS
 import shared.Genre
 import shared.Video
 
@@ -24,5 +25,9 @@ object MovieRepo {
 
     fun getExclusiveMovies(): List<Video> {
         return getAllMovies().filter { it.isExclusive }
+    }
+
+    fun getTrendingMovies(): List<Video> {
+        return getAllMovies().sortedByDescending { it.viewsInPastWeek }.take(AMOUNT_OF_TREDNING_ITEMS)
     }
 }

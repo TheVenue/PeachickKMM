@@ -16,6 +16,7 @@ class MovieAPIService {
                 rating = Rating.PG13,
                 description = "Soon after their blind date goes disastrously wrong, two single parents and their children end up sharing a suite together at an African resort.",
                 isExclusive = false,
+                viewsInPastWeek = 23232,
                 releaseDateInMs = 1402887141,
                 videoLengthInMinutes = 117
             )
@@ -28,6 +29,7 @@ class MovieAPIService {
                 rating = Rating.PG,
                 description = "On a mission to find a new master to serve, three Minions meet Scarlet Overkill the world's first female supervillain.",
                 isExclusive = false,
+                viewsInPastWeek = 45221,
                 releaseDateInMs = 1434423141,
                 videoLengthInMinutes = 90
             )
@@ -40,6 +42,7 @@ class MovieAPIService {
                 rating = Rating.PG13,
                 description = "A former policeman (Paul Walker) and his friend (Tyrese) work with a U.S. Customs agent (Eva Mendes) to indict a launderer in Miami.",
                 isExclusive = false,
+                viewsInPastWeek = 13423,
                 releaseDateInMs = 1055731941,
                 videoLengthInMinutes = 107
             )
@@ -52,6 +55,7 @@ class MovieAPIService {
                 rating = Rating.PG13,
                 description = "A Navy psychiatrist inspires a violence-prone sailor who was abused by foster parents to find his birth mother.",
                 isExclusive = false,
+                viewsInPastWeek = 24533,
                 releaseDateInMs = 1024195941,
                 videoLengthInMinutes = 120
             )
@@ -65,6 +69,7 @@ class MovieAPIService {
                 description = "On the verge of becoming a man, Prince Amleth's life changes when his father is murdered and his mother is kidnapped; two decades later, the fierce viking seeks revenge.",
                 isExclusive = true,
                 isFeatured = true,
+                viewsInPastWeek = 35321,
                 releaseDateInMs = 1655347941,
                 videoLengthInMinutes = 136
             )

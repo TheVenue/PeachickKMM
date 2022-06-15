@@ -15,6 +15,7 @@ class TVShowAPIService {
             rating = Rating.TVMA,
             description = "A talented West Philly teenager is sent to live in Bel Air to avoid the dangers of his hometown.",
             isExclusive = true,
+            viewsInPastWeek = 24932,
             releaseDateInMs = 1655347941,
             videoLengthInMinutes = 59
         )
@@ -41,6 +42,7 @@ class TVShowAPIService {
             rating = Rating.TV14,
             description = "A documentary crew films Dunder Mifflin's reactions to downsizing rumors; a feud is born between Jim and Dwight.",
             isExclusive = false,
+            viewsInPastWeek = 33422,
             releaseDateInMs = 1118890341,
             videoLengthInMinutes = 38
         )
@@ -66,6 +68,7 @@ class TVShowAPIService {
             rating = Rating.TV14,
             description = "Firehouse 51 deals with the aftermath of the capsized boat rescue.",
             isExclusive = false,
+            viewsInPastWeek = 32324,
             releaseDateInMs = 1339815141,
             videoLengthInMinutes = 42
         )
@@ -91,6 +94,7 @@ class TVShowAPIService {
             rating = Rating.TVG,
             description = "Twelve young athletes between the ages of 9 to 14 compete in the first of 16 qualifiers.",
             isExclusive = true,
+            viewsInPastWeek = 32412,
             releaseDateInMs = 1529117541,
             videoLengthInMinutes = 46
         )
