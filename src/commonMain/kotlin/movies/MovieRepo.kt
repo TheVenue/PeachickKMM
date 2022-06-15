@@ -7,7 +7,7 @@ object MovieRepo {
     private val movieAPIService = MovieAPIService()
     private val cachedMovies = mutableListOf<Video>()
 
-    fun getAllMovies(): MutableList<Video> {
+    fun getAllMovies(): List<Video> {
         if (cachedMovies.isEmpty()) {
             cachedMovies.addAll(movieAPIService.getMovies())
         }
@@ -20,5 +20,9 @@ object MovieRepo {
 
     fun getFeaturedMovies(): List<Video> {
         return cachedMovies.filter { it.isFeatured }
+    }
+
+    fun getPeachickExclusiveMovies(): List<Video> {
+        return cachedMovies.filter { it.peachickExclusive }
     }
 }

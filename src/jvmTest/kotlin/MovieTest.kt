@@ -29,4 +29,11 @@ internal class MovieTest {
         val listOfFeaturedMovies = MovieRepo.getFeaturedMovies()
         assertTrue(listOfFeaturedMovies.shuffled()[0].isFeatured)
     }
+
+    @Test
+    @RepeatedTest(999)
+    fun getPeachickExclusiveMovies() {
+        val listOfPeachickExclusiveMovies = MovieRepo.getPeachickExclusiveMovies()
+        assertTrue(listOfPeachickExclusiveMovies.shuffled()[0].peachickExclusive)
+    }
 }
