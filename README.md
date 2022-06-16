@@ -8,7 +8,5 @@ maven { url 'https://jitpack.io' }
 Step 2. Add the appropriate dependency
 
 implementation 'com.github.TheVenue.PeachickKMM:Peachick-jvm:1.1.11'
-
 implementation 'com.github.TheVenue.PeachickKMM:Peachick-js:1.1.11'
-
 implementation 'com.github.TheVenue.PeachickKMM:Peachick-native:1.1.11'
